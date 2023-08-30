@@ -16,7 +16,7 @@ function Profile() {
             (Full Stack Developer)
           </h2>
           <p className="text-slate-500 py-4 max-w-md ">
-            I have more than 1 years of Experience building and designing
+            I have more than 1 year of Experience building and designing
             Softwares. Currently, I love to work on web applications using
             technologies like React, Angular, Tailwind, Css3, Html5, Javascript
             , NodeJS , ExpressJs and MongoDB.
