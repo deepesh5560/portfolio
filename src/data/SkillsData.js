@@ -55,7 +55,7 @@ export const skills = [
     id: 12,
     image: express,
     title: "ExpressJs",
-    style: "shadow-white",
+    style: "shadow-gray-500",
   },
   {
     id: 14,
