@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Contact from "../components/Contact";
 import Profile from "../components/Profile";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar";
 import Portfolio from "../components/Portfolio";
 import Skills from "../components/Skills";
 import SocialLinks from "../components/SocialLinks";
