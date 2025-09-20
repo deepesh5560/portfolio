@@ -45,7 +45,7 @@ function SocialLinks() {
           <IoDocumentOutline size={30} />
         </>
       ),
-      href: "/Manik_Verma_Resume.pdf",
+      href: "/Deepesh.pdf",
 
       download: true,
     },
