@@ -2,19 +2,26 @@ import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 
 export const experiences = [
-  {
-    title: "Software Engineer (Full Stack)",
-    subTitle: "Calidig Solutions, Sirsa, Haryana",
-    body: "Built a number of Websites by working in following technologies : HTML5, Css3, Javascript, React, Angular, Next.js,NodeJS, ExpressJs,MongoDB",
+   {
+    title: "ChroexTech (Full Stack)",
+    subTitle: "ChroexTech, Tanda, UP",
+    body: "Building a product using : React, Next.js, NodeJS, ExpressJs, MySQL, AWS, GenAI",
     icon: <WorkIcon />,
-    date: "May 2022 - Present",
+    date: "July 2024 - Present",
+  },
+    {
+    title: "Digimanta Labs (MERN)",
+    subTitle: "Digimanta Labs, Mohali, Punjab",
+    body: "Got Outsourced in Adobe and Built a number of Websites by working in following technologies : React, Next.js, NodeJS, ExpressJs, MongoDB",
+    icon: <WorkIcon />,
+    date: "Nov 2023 - June 2024",
   },
   {
-    title: "Home Tutor",
-    subTitle: "Self employed, Jalandhar, Punjab",
-    body: "Taught Maths and Science to Students till 12th class.",
+    title: "Software Engineer (MERN)",
+    subTitle: "Calidig Solutions, Sirsa, Haryana",
+    body: "Built a number of Websites by working in following technologies : HTML5, Css3, Javascript, React, Angular, Next.js,NodeJS, ExpressJs,MySQL",
     icon: <WorkIcon />,
-    date: "Nov 2019 - Apr 2022",
+    date: "May 2022 - Oct 2023",
   },
 
   {

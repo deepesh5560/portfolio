@@ -1,10 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProfileImg from "../assets/hero.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import Animation from "./Animation";
 
 function Profile() {
+  const [time,setTime]=useState()
+
+  function calculateDateDifference(startDateStr) {
+const startDate = new Date(startDateStr);
+  const today = new Date();
+
+  let years = today.getFullYear() - startDate.getFullYear();
+  let months = today.getMonth() - startDate.getMonth();
+  let days = today.getDate() - startDate.getDate();
+
+  // Adjust for negatives
+  if (days < 0) {
+    months--;
+    const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+    days += prevMonth.getDate();
+  }
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  // Convert into decimal years
+  const totalYears = years + months / 12;
+
+  // Custom rules
+  if (totalYears < 3.5) {
+    return `${Math.floor(totalYears)}+ years of experience`;
+  } else if (totalYears >= 3.5 && totalYears < 3.8) {
+    return `${totalYears.toFixed(1)} years of experience`;
+  } else {
+    return `Almost ${Math.ceil(totalYears)} years of experience`;
+  }
+}
+
+useEffect(() => {
+ setTime(calculateDateDifference("2022-05-02"))
+}, [])
+
+
   return (
     <div name="Home" className="w-full pt-20 md:pt-0 h-screen pb-10 md:pb-0">
       <Animation />
@@ -16,10 +55,10 @@ function Profile() {
             (Full Stack Developer)
           </h2>
           <p className="text-slate-500 py-4 max-w-md ">
-            I have more than 1 year of Experience building and designing
+            I have {time} building and designing
             Softwares. Currently, I love to work on web applications using
-            technologies like React, Angular, Tailwind, Css3, Html5, Javascript
-            , NodeJS , ExpressJs and MongoDB.
+            technologies like React, Angular, Javascript, TypeScript
+            , NodeJS , ExpressJs, MongoDB, MySQL, AWS and GenAI.
           </p>
           <div>
             <Link

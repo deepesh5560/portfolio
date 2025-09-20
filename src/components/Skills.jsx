@@ -21,7 +21,7 @@ function Skills() {
               key={id}
               className={`rounded-lg shadow-md hover:scale-105 duration-500 py-2 ${style}`}
             >
-              <img src={image} alt={image} className="w-20 mx-auto" />
+              <img src={image} alt={image} className="w-20 mx-auto h-20" />
               <p className="mt-4">{title}</p>
             </div>
           ))}
